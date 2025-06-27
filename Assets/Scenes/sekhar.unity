@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 106671173}
   - component: {fileID: 106671176}
   - component: {fileID: 106671175}
-  - component: {fileID: 106671174}
+  - component: {fileID: 106671177}
   m_Layer: 0
   m_Name: ImageTarget
   m_TagString: Untagged
@@ -157,25 +157,6 @@ Transform:
   - {fileID: 768716663}
   m_Father: {fileID: 352543235}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &106671174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 106671172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 106671176}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: brain1
-  mDatasetName: Vuforia/bodyparts.xml
-  mCastedBehaviour: {fileID: 106671176}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &106671175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,7 +227,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 106671174}
+  mPreview: {fileID: 106671177}
+--- !u!114 &106671177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106671172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 106671176}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: brain1
+  mDatasetName: Vuforia/bodyparts.xml
+  mCastedBehaviour: {fileID: 106671176}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1001 &127642878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -454,6 +454,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1312609851}
   - {fileID: 106671173}
   - {fileID: 588358051}
   - {fileID: 1250257153}
@@ -470,7 +471,7 @@ GameObject:
   - component: {fileID: 588358051}
   - component: {fileID: 588358054}
   - component: {fileID: 588358053}
-  - component: {fileID: 588358052}
+  - component: {fileID: 588358055}
   m_Layer: 0
   m_Name: ImageTarget
   m_TagString: Untagged
@@ -494,25 +495,6 @@ Transform:
   - {fileID: 127642879}
   m_Father: {fileID: 352543235}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &588358052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 588358050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 588358054}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: stomach1
-  mDatasetName: Vuforia/bodyparts.xml
-  mCastedBehaviour: {fileID: 588358054}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &588358053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -583,7 +565,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 588358052}
+  mPreview: {fileID: 588358055}
+--- !u!114 &588358055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588358050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 588358054}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: stomach1
+  mDatasetName: Vuforia/bodyparts.xml
+  mCastedBehaviour: {fileID: 588358054}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1001 &768716662
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -862,7 +863,7 @@ GameObject:
   - component: {fileID: 1250257153}
   - component: {fileID: 1250257156}
   - component: {fileID: 1250257155}
-  - component: {fileID: 1250257154}
+  - component: {fileID: 1250257157}
   m_Layer: 0
   m_Name: ImageTarget (1)
   m_TagString: Untagged
@@ -886,25 +887,6 @@ Transform:
   - {fileID: 865815759}
   m_Father: {fileID: 352543235}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1250257154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1250257152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1250257156}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: kidneypic
-  mDatasetName: Vuforia/bodyparts.xml
-  mCastedBehaviour: {fileID: 1250257156}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1250257155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -975,7 +957,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1250257154}
+  mPreview: {fileID: 1250257157}
+--- !u!114 &1250257157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250257152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1250257156}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: kidneypic
+  mDatasetName: Vuforia/bodyparts.xml
+  mCastedBehaviour: {fileID: 1250257156}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1312609847
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,7 +988,7 @@ GameObject:
   - component: {fileID: 1312609851}
   - component: {fileID: 1312609850}
   - component: {fileID: 1312609849}
-  - component: {fileID: 1312609848}
+  - component: {fileID: 1312609852}
   m_Layer: 0
   m_Name: ImageTarget
   m_TagString: Untagged
@@ -995,25 +996,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1312609848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1312609847}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1312609850}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: skull
-  mDatasetName: Vuforia/bodyparts.xml
-  mCastedBehaviour: {fileID: 1312609850}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1312609849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1084,7 +1066,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1312609848}
+  mPreview: {fileID: 1312609852}
 --- !u!4 &1312609851
 Transform:
   m_ObjectHideFlags: 0
@@ -1093,14 +1075,33 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1312609847}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 76.8, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1151263476}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 352543235}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1312609852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312609847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1312609850}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: skull
+  mDatasetName: Vuforia/bodyparts.xml
+  mCastedBehaviour: {fileID: 1312609850}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1475541057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1225,4 +1226,3 @@ SceneRoots:
   m_Roots:
   - {fileID: 1475541059}
   - {fileID: 352543235}
-  - {fileID: 1312609851}
